@@ -1,13 +1,9 @@
 
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-:::                                                                                                                                                                :::
-:::                                                         PC-to-PC-File-tranfer-using-LiFi                                                                       :::
-:::                                                                                                                                                                :::
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::  --------------------------------------------------------------  PC-to-PC-File-tranfer-using-LiFi ------------------------------------------------------- ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -31,3 +27,6 @@ In this project, LiFi technology was used to transfer files of different formats
 5. At the same time, the digital_write.py code needs to be run on the receiver PC. Through a serial communication port this code continuously reads the status of the Light Dependent Resistor (LDR) connected to the receiver arduino, which receives the transmitted data. The light sensor read the intensity of LED and receiver side Python Code compares it with a threshold, so that if the intensity value is greater than a threshold, it means the receiver PC receives bit 1; otherwise, it receives bit 0.The code writes this data to an output.txt file as 1s and 0s.
 
 6. After the complete data transfer is done, the encoder_decoder.py code needs to be run again to decode the received data from binary (0s and 1s) to its original form.
+
+
+
